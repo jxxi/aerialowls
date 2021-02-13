@@ -2,8 +2,8 @@ import React from 'react';
 import { StyleSheet, Dimensions, ScrollView } from 'react-native';
 import { Block, theme } from 'galio-framework';
 
-import { VideoCard } from '../components/VideoCard';
-import { videos } from "../constants/";
+import VideoCard from '../components/VideoCard';
+import videos from "../constants/videos";
 
 const { width } = Dimensions.get('screen');
 
@@ -22,7 +22,7 @@ class Home extends React.Component {
       //     <Card item={articles[3]} horizontal />
       //     <Card item={articles[4]} full />
       //   </Block>
-      // </ScrollView>
+      // // </ScrollView>
       <ScrollView
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.videos}>

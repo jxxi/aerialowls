@@ -1,5 +1,5 @@
-const AerialVideo = require("../assets/videos/tree.mp4");
-const AerialVideo1 = require("../assets/videos/silks.mp4");
+const AerialVideo = require('../assets/videos/tree.mp4');
+const AerialVideo1 = require('../assets/videos/silks.mp4');
 
 export default [
   {
@@ -9,9 +9,9 @@ export default [
     horizontal: true
   },
   {
-    title: 'Ice cream is made with carrageenan …',
+    title: '1 Ice cream is made with carrageenan …',
     data: AerialVideo1,
-    cta: 'View video', 
+    cta: 'View video 1', 
     horizontal: true
   }
 ];

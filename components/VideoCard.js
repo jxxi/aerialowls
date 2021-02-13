@@ -24,7 +24,7 @@ class VideoCard extends React.Component {
 
     return (
       <Block row={horizontal} videoCard flex style={videoCardContainer}>
-        <TouchableWithoutFeedback onPress={() => navigation.navigate('Pro')}>
+        {/* <TouchableWithoutFeedback onPress={() => navigation.navigate('Pro')}>
           <Block flex style={videoContainer}>
             <Video source={{uri: item.data}} style={videoStyles} />
           </Block>
@@ -34,7 +34,7 @@ class VideoCard extends React.Component {
             <Text size={14} style={styles.videoCardTitle}>{item.title}</Text>
             <Text size={12} muted={!ctaColor} color={ctaColor || argonTheme.COLORS.ACTIVE} bold>{item.cta}</Text>
           </Block>
-        </TouchableWithoutFeedback>
+        </TouchableWithoutFeedback> */}
       </Block>
     );
   }
