@@ -6,7 +6,7 @@ import { Block, Text, theme } from 'galio-framework';
 
 import { argonTheme } from '../constants';
 
-import Video from 'react-native-video';
+import { Video } from 'expo-av';
 
 class Card extends React.Component {
   render() {
@@ -24,18 +24,22 @@ class Card extends React.Component {
 
     return (
       <Block row={horizontal} card flex style={cardContainer}>
-        <TouchableWithoutFeedback onPress={() => navigation.navigate('Pro')}>
           <Block flex style={imgContainer}>
-            <Image source={{uri: item.image}} style={imageStyles} />
+            <Video
+              source={item.video}
+              rate={1.0}
+              volume={1.0}
+              isMuted={false}
+              resizeMode="cover"
+              isLooping
+              style={{ width: 300, height: 300 }}
+            />
           </Block>
-        </TouchableWithoutFeedback>
-        <TouchableWithoutFeedback onPress={() => navigation.navigate('Pro')}>
           <Block flex space="between" style={styles.cardDescription}>
             <Text size={14} style={styles.cardTitle}>{item.title}</Text>
             <Text size={12} muted={!ctaColor} color={ctaColor || argonTheme.COLORS.ACTIVE} bold>{item.cta}</Text>
           </Block>
-        </TouchableWithoutFeedback>
-      </Block>
+    </Block>
     );
   }
 }
