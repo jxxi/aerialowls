@@ -10,7 +10,7 @@ import {
 //galio
 import { Block, Text, theme } from "galio-framework";
 //argon
-import { articles, Images, argonTheme } from "../constants/";
+import { videos, Images, argonTheme } from "../constants/";
 import { Card } from "../components/";
 
 const { width } = Dimensions.get("screen");
@@ -86,15 +86,15 @@ class Articles extends React.Component {
         </Text>
         <Block flex>
           <Block style={{ paddingHorizontal: theme.SIZES.BASE }}>
-            <Card item={articles[0]} horizontal />
+            <Card item={videos[0]} horizontal />
             <Block flex row>
               <Card
-                item={articles[1]}
+                item={videos[1]}
                 style={{ marginRight: theme.SIZES.BASE }}
               />
-              <Card item={articles[2]} />
+              <Card item={videos[2]} />
             </Block>
-            <Card item={articles[4]} full />
+            <Card item={videos[4]} full />
             <Block flex card shadow style={styles.category}>
               <ImageBackground
                 source={{ uri: Images.Products["View article"] }}

@@ -6,11 +6,12 @@ import { Block, Text, theme } from 'galio-framework';
 
 import { argonTheme } from '../constants';
 
+import Video from 'react-native-video';
 
 class Card extends React.Component {
   render() {
     const { navigation, item, horizontal, full, style, ctaColor, imageStyle } = this.props;
-    
+
     const imageStyles = [
       full ? styles.fullImage : styles.horizontalImage,
       imageStyle

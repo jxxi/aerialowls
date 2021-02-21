@@ -1,13 +1,11 @@
 import argonTheme from './Theme';
-import articles from './articles';
+import videos from './videos';
 import Images from './Images';
 import tabs from './tabs';
-import videos from './videos';
 
 export {
-  articles, 
+  videos,
   argonTheme,
   Images,
-  tabs,
-  videos
+  tabs
 };
